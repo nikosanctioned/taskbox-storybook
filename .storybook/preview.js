@@ -1,4 +1,6 @@
 import "../src/index.css";
+import { initialize, mswLoader } from "msw-storybook-addon";
+initialize();
 const preview = {
   parameters: {
     controls: {
@@ -8,6 +10,7 @@ const preview = {
       },
     },
   },
+  loaders: [mswLoader],
 };
 
 export default preview;
