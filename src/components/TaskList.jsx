@@ -36,7 +36,6 @@ export default function TaskList() {
       </span>
     </div>
   );
-  console.log("tasks", tasks);
 
   if (status === "loading") {
     return (
